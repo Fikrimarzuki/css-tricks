@@ -4,274 +4,504 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS-TRICKS</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #131313;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #dfdfdfdc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+    section h1 {
+      font-size: xx-large;
+      padding: 20px 0 30px;
+      color: white;
+    }
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      max-height: 200px;
+      width: 300px;
+      object-fit: contain;
+      background: black;
+      margin: 10px 0px;
+      /* cursor: pointer; */
+    }
+    .container {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-auto-flow: dense;
+    }
+    .box {
+      border: 1px solid #dfdfdfdc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0px 10px 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgba(15, 14, 14, 0.76);
+      color: white;
+    }
+    .box h3 {
+      text-align: center;
+    }
+    .box-number {
+      /* border: 1px solid #dbd5d533; */
+      /* box-shadow: rgba(255, 255, 255, 0.76); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin: 0px -10px -25px;
+    }
+    .content-box a {
+      text-decoration: none;
+      color: blue;
+    }
+    .content-box a:hover {
+      color: rgb(4, 4, 85);
+    }
+    @media (min-width: 600px) {
+      img {
+        width: 220px;
+      }
+      p {
+        font-size: small;
+      }
+    }
+    @media (min-width: 900px) {
+      img {
+        height: 300px;
+        width: 300px;
+      }
+      p {
+        font-size: small;
+      }
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <div>
-      CSS TRICKS
-    </div>
-  </nav>
   <section>
-    <div>
-      Here is the list
-      <div>
-        <p>Button Ripple Effect</p>
-        <p>type: button</p>
-        <a href="./views/button/button-ripple-effect/button-ripple-effect.html" target="_blank">Button Ripple Effect</a>
-        <img src="./views/button/button-ripple-effect/button-ripple-effect.png" alt="button ripple effect" />
-        <p>source: https://www.youtube.com/watch?v=ueyRcYEmsrI</p>
+    <h1 style="text-align: center;">CSS TRICK</h1>
+    <div class="container">
+      <div class="box">
+        <h3><span class="box-number">1.</span><br />Button Ripple Effect</h3>
+        <div class="image-box">
+          <img src="./views/button/button-ripple-effect/button-ripple-effect.png" alt="button ripple effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> button</p>
+          <a href="./views/button/button-ripple-effect/button-ripple-effect.html" target="_blank">Button Ripple Effect</a>
+          <p>source: https://www.youtube.com/watch?v=ueyRcYEmsrI</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Creative Product Catd UI Design | E-commerce Card Using Html5 & CSS3</p>
-        <p>type: card</p>
-        <a href="./views/cards/ecommerce-card/e-commerce-card.html" target="_blank">Ecommerce Card</a>
-        <img src="./views/cards/ecommerce-card/e-commerce-card.png" alt="ecommerce card"/>
-        <p>source: https://www.youtube.com/watch?v=jUByQLfakJ8</p>
+      <div class="box">
+        <h3><span class="box-number">2.</span><br />CSS Creative Product Catd UI Design | E-commerce Card Using Html5 & CSS3</h3>
+        <div class="image-box">
+          <img src="./views/cards/ecommerce-card/e-commerce-card.png" alt="ecommerce card"/>
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="./views/cards/ecommerce-card/e-commerce-card.html" target="_blank">Ecommerce Card</a>
+          <p>source: https://www.youtube.com/watch?v=jUByQLfakJ8</p>
+        </div>
       </div>
-      <div>
-        <p>Simple Parallax Scrolling Effect with CSS & Vanilla Javascript</p>
-        <p>type: page</p>
-        <a href="./views/pages/simple-parallax-scrolling/simple-paralla-scrolling.html" target="_blank">Simple Parallax Scrolling</a>
-        <img src="./views//pages/simple-parallax-scrolling/simple-parallax-scrolling.png" alt="simple parallax scrolling"/>
-        <p>source: https://www.youtube.com/watch?v=TawH-AqHTXc</p>
+      <div class="box">
+        <h3><span class="box-number">3.</span><br />Simple Parallax Scrolling Effect with CSS & Vanilla Javascript</h3>
+        <div class="image-box">
+          <img src="./views//pages/simple-parallax-scrolling/simple-parallax-scrolling.png" alt="simple parallax scrolling"/>
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="./views/pages/simple-parallax-scrolling/simple-paralla-scrolling.html" target="_blank">Simple Parallax Scrolling</a>
+          <p>source: https://www.youtube.com/watch?v=TawH-AqHTXc</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Masonry Layout Using CSS Grid | CSS3 Grid</p>
-        <p>type: page</p>
-        <a href="./views/pages/responsive-masonry-layout/responsive-masonry-layout.html" target="_blank">Responsive Masonry Layout</a>
-        <img src="./views/pages/responsive-masonry-layout/responsive-masonry-layout.png" alt="responsive-masonry-layout" />
-        <p>source: https://www.youtube.com/watch?v=icnZSJbNsEM</p>
+      <div class="box">
+        <h3><span class="box-number">4.</span><br />Responsive Masonry Layout Using CSS Grid | CSS3 Grid</h3>
+        <div class="image-box">
+          <img src="./views/pages/responsive-masonry-layout/responsive-masonry-layout.png" alt="responsive-masonry-layout" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="./views/pages/responsive-masonry-layout/responsive-masonry-layout.html" target="_blank">Responsive Masonry Layout</a>
+          <p>source: https://www.youtube.com/watch?v=icnZSJbNsEM</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Neumorphism Working Analog Clock UI Design Using Html5 CSS3 & Javascript</p>
-        <p>type: other</p>
-        <p>PART 1 - CLOCK</p>
-        <a href="./views/other/working-analog-clock/working-analog-clock.html" target="_blank">Working Analog Clock</a>
-        <p>PART 2 - ADD TOGGLE THEME</p>
-        <a href="./views/other/working-analog-clock/working-analog-clock-toggle-theme.html" target="_blank">Working Analog Clock with toggle between dark and ligh mode</a>
-        <img src="./views/other/working-analog-clock/working-analog-clock.png" alt="working analog clock" />
-        <p>source PART 1: https://www.youtube.com/watch?v=weZFfrjF-k4</p>
-        <p>source PART 2: https://www.youtube.com/watch?v=-PRyFcAceYA</p>
+      <div class="box">
+        <h3><span class="box-number">5.</span><br />CSS Neumorphism Working Analog Clock UI Design Using Html5 CSS3 & Javascript</h3>
+        <div class="image-box">
+          <img src="./views/other/working-analog-clock/working-analog-clock.png" alt="working analog clock" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> other</p>
+          <a href="./views/other/working-analog-clock/working-analog-clock.html" target="_blank">Working Analog Clock</a>
+          <p>source: https://www.youtube.com/watch?v=weZFfrjF-k4</p>
+          <a href="./views/other/working-analog-clock/working-analog-clock-toggle-theme.html" target="_blank">Working Analog Clock with toggle between dark and ligh mode</a>
+          <p>source: https://www.youtube.com/watch?v=-PRyFcAceYA</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Wavy Text Animation Effects | HTML5 CSS3 Animation</p>
-        <p>type: text</p>
-        <a href="./views/text/wavy-text-animation/wavy-text-animation.html" target="_blank" >Wavy Text Animation</a>
-        <img src="./views/text/wavy-text-animation/wavy-text-animation.png" alt="wavy text animation" />
-        <p>source: https://www.youtube.com/watch?v=m1ZKHPbnyjo</p>
+      <div class="box">
+        <h3><span class="box-number">6.</span><br />CSS Wavy Text Animation Effects | HTML5 CSS3 Animation</h3>
+        <div class="image-box">
+          <img src="./views/text/wavy-text-animation/wavy-text-animation.png" alt="wavy text animation" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> text</p>
+          <a href="./views/text/wavy-text-animation/wavy-text-animation.html" target="_blank" >Wavy Text Animation</a>
+          <p>source: https://www.youtube.com/watch?v=m1ZKHPbnyjo</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Card UI Design With Hover Effects | CSS3 Cards</p>
-        <p>type: card</p>
-        <a href="./views/cards/responsive-card-ui-hover/responsive-card-ui-hover.html" target="_blank">Responsive Card UI Hover</a>
-        <img src="./views/cards/responsive-card-ui-hover/responsive-card-ui.png" alt="responsive card ui hover" />
-        <p>source: https://www.youtube.com/watch?v=RPFfpG0SvV0</p>
+      <div class="box">
+        <h3><span class="box-number">7.</span><br />Responsive Card UI Design With Hover Effects | CSS3 Cards</h3>
+        <div class="image-box">
+          <img src="./views/cards/responsive-card-ui-hover/responsive-card-ui.png" alt="responsive card ui hover" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="./views/cards/responsive-card-ui-hover/responsive-card-ui-hover.html" target="_blank">Responsive Card UI Hover</a>
+          <p>source: https://www.youtube.com/watch?v=RPFfpG0SvV0</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Portfolio Landing Page Website Design Tutorial | HTML CSS & Vanilla Javascript</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Responsive Portfolio Landing Page</a>
-        <img src="./views/pages/responsive-portfolio-landing-page/responsive-portfolio-landing-page.png" alt="responsive portfolio landing page" />
-        <p>source: https://www.youtube.com/watch?v=5zkOWf5_lAo</p>
+      <div class="box">
+        <h3><span class="box-number">8.</span><br />Responsive Portfolio Landing Page Website Design Tutorial | HTML CSS & Vanilla Javascript</h3>
+        <div class="image-box">
+          <img src="./views/pages/responsive-portfolio-landing-page/responsive-portfolio-landing-page.png" alt="responsive portfolio landing page" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="./views/pages/responsive-portfolio-landing-page/responsive-portfolio-landing-page.html" target="_blank">Responsive Portfolio Landing Page</a>
+          <p>source: https://www.youtube.com/watch?v=5zkOWf5_lAo</p>
+        </div>
       </div>
-      <div>
-        <p>Video Caption Hover Effect using HTML and CSS Only | CSS3 Hover Effects</p>
-        <p>type: video</p>
-        <a href="#" target="_blank">Video Caption Hover Effect</a>
-        <img src="./views/videos/video-caption-hover/video-caption-hover.png" alt="video caption hover effect" />
-        <p>source: https://www.youtube.com/watch?v=Qf3pza8ZhcA</p>
+      <div class="box">
+        <h3><span class="box-number">9.</span><br />Video Caption Hover Effect using HTML and CSS Only | CSS3 Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/videos/video-caption-hover/video-caption-hover.png" alt="video caption hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> video</p>
+          <a href="./views/videos/video-caption-hover/video-caption-hover.html" target="_blank">Video Caption Hover Effect</a>
+          <p>source: https://www.youtube.com/watch?v=Qf3pza8ZhcA</p>
+        </div>
       </div>
-      <div>
-        <p>How to Build a Complete Responsive Website from Scratch</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Build a complete responsive website</a>
-        <img src="./views/pages/responsive-website-from-scratch/responsive-website-from-scratch.png" alt="complete responsive website" />
-        <p>source: https://www.youtube.com/watch?v=X8NFkUQNeek</p>
+      <div class="box">
+        <h3><span class="box-number">10.</span><br />How to Build a Complete Responsive Website from Scratch</h3>
+        <div class="image-box">
+          <img src="./views/pages/responsive-website-from-scratch/responsive-website-from-scratch.png" alt="complete responsive website" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="#" target="_blank">Build a complete responsive website</a>
+          <p>source: https://www.youtube.com/watch?v=X8NFkUQNeek</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Neumorphism Radio Buttons UI Design | CSS3 Custom Radio Button</p>
-        <p>type: button</p>
-        <a href="#" target="_blank">Neumorphism Radio Button</a>
-        <img src="./views/button/neumorphism-radio-button-ui/neumorphism-radio-button-ui.png" alt="neumorphism radio button" />
-        <p>source: https://www.youtube.com/watch?v=sJcAgWkjMt4</p>
+      <div class="box">
+        <h3><span class="box-number">11.</span><br />CSS Neumorphism Radio Buttons UI Design | CSS3 Custom Radio Button</h3>
+        <div class="image-box">
+          <img src="./views/button/neumorphism-radio-button-ui/neumorphism-radio-button-ui.png" alt="neumorphism radio button" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> button</p>
+          <a href="./views/button/neumorphism-radio-button-ui/neumorphism-radio-button-ui.html" target="_blank">Neumorphism Radio Button</a>
+          <p>source: https://www.youtube.com/watch?v=sJcAgWkjMt4</p>
+        </div>
       </div>
-      <div>
-        <p>How to Make a Calculator using HTML CSS3 & Javascript</p>
-        <p>type: other</p>
-        <a href="#" target="_blank">Calculator</a>
-        <img src="./views/other/calculator/calculator.png" alt="calculator" />
-        <p>source: https://www.youtube.com/watch?v=BuZtAqk5LIY</p>
+      <div class="box">
+        <h3><span class="box-number">12.</span><br />How to Make a Calculator using HTML CSS3 & Javascript</h3>
+        <div class="image-box">
+          <img src="./views/other/calculator/calculator.png" alt="calculator" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> other</p>
+          <a href="#" target="_blank">Calculator</a>
+          <p>source: https://www.youtube.com/watch?v=BuZtAqk5LIY</p>
+        </div>
       </div>
-      <div>
-        <p>Creative Menu Item Hover Effect || CSS Shiny</p>
-        <p>type: menu</p>
-        <a href="#" target="_blank">Menu Item Hover Effect</a>
-        <img src="./views/menu/creative-menu-hover-effect/creative-menu-item-hover-effects.png" alt="menu item hover effect" />
-        <p>source: https://www.youtube.com/watch?v=93XJzguCMKQv</p>
+      <div class="box">
+        <h3><span class="box-number">13.</span><br />Creative Menu Item Hover Effect || CSS Shiny</h3>
+        <div class="image-box">
+          <img src="./views/menu/creative-menu-hover-effect/creative-menu-item-hover-effects.png" alt="menu item hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> menu</p>
+          <a href="./views/menu/creative-menu-hover-effect/creative-menu-item-hover-effect.html" target="_blank">Menu Item Hover Effect</a>
+          <p>source: https://www.youtube.com/watch?v=93XJzguCMKQv</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Touch Slider Using HTML CSS & Swiper.js - 3D Responsive Slider Using Swiper.js</p>
-        <p>type: slider</p>
-        <a href="#" target="_blank">Touch Slider Swiper.js Part 1</a>
-        <img src="" alt="touch slider part 1" />
-        <p>source: https://www.youtube.com/watch?v=kw1wnvWjgCw&t=2s</p>
-        <a href="#" target="_blank">Touch Slider Swiper.js Part 2</a>
-        <img src="./views/slider/responsive-touch-slider-swiper/responsive-touch-slider-swiper.png" alt="touch slider part 2" />
-        <p>source: https://www.youtube.com/watch?v=kX6MLRc_Qmg</p>
+      <div class="box">
+        <h3><span class="box-number">14.</span><br />Responsive Touch Slider Using HTML CSS & Swiper.js - 3D Responsive Slider Using Swiper.js</h3>
+        <div class="image-box">
+          <!-- <img src="" alt="touch slider part 1" /> -->
+          <img src="./views/slider/responsive-touch-slider-swiper/responsive-touch-slider-swiper.png" alt="touch slider part 2" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> slider</p>
+          <a href="#" target="_blank">Touch Slider Swiper.js Part 1</a>
+          <p>source: https://www.youtube.com/watch?v=kw1wnvWjgCw&t=2s</p>
+          <a href="#" target="_blank">Touch Slider Swiper.js Part 2</a>
+          <p>source: https://www.youtube.com/watch?v=kX6MLRc_Qmg</p>
+        </div>
       </div>
-      <div>
-        <p>Animated Responsive Navbar Tutorial</p>
-        <p>type: menu/navbar</p>
-        <a href="#" target="_blank">Buble Navbar Animated</a>
-        <img src="./views/menu/Bubble-navbar-animated/bubble-navbar-animated.png" alt="bubble navbar animated" />
-        <p>source: https://www.youtube.com/watch?v=H4MkGzoACpQ</p>
+      <div class="box">
+        <h3><span class="box-number">15.</span><br />Animated Responsive Navbar Tutorial</h3>
+        <div class="image-box">
+          <img src="./views/menu/Bubble-navbar-animated/bubble-navbar-animated.png" alt="bubble navbar animated" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> menu/navbar</p>
+          <a href="#" target="_blank">Buble Navbar Animated</a>
+          <p>source: https://www.youtube.com/watch?v=H4MkGzoACpQ</p>
+        </div>
       </div>
-      <div>
-        <p>Javascript Mousemove 3D Parallax Tilt Effect Using Vanilla tilt.js | 3D Tilt Hover Effects</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Mousemove 3D Parallax</a>
-        <img src="./views/cards/mousemove-3d-parallax/mousemove-3d-parallax.png" alt="mousemove 3d parallax" />
-        <p>source: https://www.youtube.com/watch?v=DvjiTCHC-uY</p>
+      <div class="box">
+        <h3><span class="box-number">16.</span><br />Javascript Mousemove 3D Parallax Tilt Effect Using Vanilla tilt.js | 3D Tilt Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/cards/mousemove-3d-parallax/mousemove-3d-parallax.png" alt="mousemove 3d parallax" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="./views/cards/mousemove-3d-parallax/mousemove-3d-parallax.html" target="_blank">Mousemove 3D Parallax</a>
+          <p>source: https://www.youtube.com/watch?v=DvjiTCHC-uY</p>
+        </div>
       </div>
-      <div>
-        <p>CSS 3D Isometric Social Media Icon Hover Effects | Fontawesome Icons</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">3D isometric social media icon</a>
-        <img src="./views/menu/3d-isometrics-social-media-icon/3d-isometric-social-media-icon.png" alt="3D isometric social media icon" />
-        <p>source: https://www.youtube.com/watch?v=C8wSNZqktOM</p>
+      <div class="box">
+        <h3><span class="box-number">17.</span><br />CSS 3D Isometric Social Media Icon Hover Effects | Fontawesome Icons</h3>
+        <div class="image-box">
+          <img src="./views/menu/3d-isometrics-social-media-icon/3d-isometric-social-media-icon.png" alt="3D isometric social media icon" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="./views/menu/3d-isometrics-social-media-icon/3d-isotmertrics-social-media-icon.html" target="_blank">3D isometric social media icon</a>
+          <p>source: https://www.youtube.com/watch?v=C8wSNZqktOM</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Animation & Hover Effects</p>
-        <p>type: loading</p>
-        <a href="#" target="_blank">Animation & Hover Effects</a>
-        <img src="./views/text/animation-hover-effect/animation-hover-effect.png" alt="animation hover effect" />
-        <p>source: https://www.youtube.com/watch?v=qXj-KdVtPRA</p>
+      <div class="box">
+        <h3><span class="box-number">18.</span><br />CSS Animation & Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/text/animation-hover-effect/animation-hover-effect.png" alt="animation hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> loading</p>
+          <a href="./views/text/animation-hover-effect/animation-hover.html" target="_blank">Animation & Hover Effects</a>
+          <p>source: https://www.youtube.com/watch?v=qXj-KdVtPRA</p>
+        </div>
       </div>
-      <div>
-        <p>Complete Responsive Movie Landing Page Website Design | HTML CSS & Javascript</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Responsive movie landing page</a>
-        <img src="./views/pages/responsive-movie-landing-page/responsive-movie-landing-page.png" alt="responsive movie landing page" />
-        <p>source: https://www.youtube.com/watch?v=SaTWGn_HYYM</p>
+      <div class="box">
+        <h3><span class="box-number">19.</span><br />Complete Responsive Movie Landing Page Website Design | HTML CSS & Javascript</h3>
+        <div class="image-box">
+          <img src="./views/pages/responsive-movie-landing-page/responsive-movie-landing-page.png" alt="responsive movie landing page" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="#" target="_blank">Responsive movie landing page</a>
+          <p>source: https://www.youtube.com/watch?v=SaTWGn_HYYM</p>
+        </div>
       </div>
-      <div>
-        <p>How to Create a Responsive Contact Form with HTML CSS | Floating Placeholder CSS3</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Responsive Contact Form</a>
-        <img src="./views/pages/responsive-contact-form/responsive-contact-form.png" alt="responsive contact form" />
-        <p>source: https://www.youtube.com/watch?v=yWpqVGRPAFk</p>
+      <div class="box">
+        <h3><span class="box-number">20.</span><br />How to Create a Responsive Contact Form with HTML CSS | Floating Placeholder CSS3</h3>
+        <div class="image-box">
+          <img src="./views/pages/responsive-contact-form/responsive-contact-form.png" alt="responsive contact form" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="#" target="_blank">Responsive Contact Form</a>
+          <p>source: https://www.youtube.com/watch?v=yWpqVGRPAFk</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Glowing Loading Page Animation Effects | CSS3 Animation Tutorial</p>
-        <p>type: text/loading</p>
-        <a href="#" target="_blank">Glowing Loading Animation</a>
-        <img src="./views/text/glowing-loading-page-animation/glowing-loading-page.png" alt="glowing loading animation" />
-        <p>source: https://www.youtube.com/watch?v=EkNfXFYPBR4</p>
+      <div class="box">
+        <h3><span class="box-number">21.</span><br />CSS Glowing Loading Page Animation Effects | CSS3 Animation Tutorial</h3>
+        <div class="image-box">
+          <img src="./views/text/glowing-loading-page-animation/glowing-loading-page.png" alt="glowing loading animation" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> text/loading</p>
+          <a href="./views/text/glowing-loading-page-animation/glowing-loading-page-animation.html" target="_blank">Glowing Loading Animation</a>
+          <p>source: https://www.youtube.com/watch?v=EkNfXFYPBR4</p>
+        </div>
       </div>
-      <div>
-        <p>Float an Image Without Text Wrapping Using CSS Flex | Revised Version</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Float an image using css flex</a>
-        <img src="./views/cards/float-an-image-without-text-wrapping/float-an-image-without-text-wrapping.png" alt="float an image using css flex" />
-        <p>source: https://www.youtube.com/watch?v=e2RQM4pE8uI</p>
+      <div class="box">
+        <h3><span class="box-number">22.</span><br />Float an Image Without Text Wrapping Using CSS Flex | Revised Version</h3>
+        <div class="image-box">
+          <img src="./views/cards/float-an-image-without-text-wrapping/float-an-image-without-text-wrapping.png" alt="float an image using css flex" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Float an image using css flex</a>
+          <p>source: https://www.youtube.com/watch?v=e2RQM4pE8uI</p>
+        </div>
       </div>
-      <div>
-        <p>Smooth Page Transitions With Javascript Tutorial</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Smooth page transition</a>
-        <img src="./views/pages/smooth-page-transition/smooth-page-transitions.png" alt="smooth page transition" />
-        <p>source: https://www.youtube.com/watch?v=1dJT-99KpiI</p>
+      <div class="box">
+        <h3><span class="box-number">23.</span><br />Smooth Page Transitions With Javascript Tutorial</h3>
+        <div class="image-box">
+          <img src="./views/pages/smooth-page-transition/smooth-page-transitions.png" alt="smooth page transition" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="#" target="_blank">Smooth page transition</a>
+          <p>source: https://www.youtube.com/watch?v=1dJT-99KpiI</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Creative Menu Hover Effects</p>
-        <p>type: menu/navbar</p>
-        <a href="#" target="_blank">Menu hover effect</a>
-        <img src="./views/menu/creative-menu-hover-effect/creative-menu-item-hover-effects.png" alt="menu hover effect" />
-        <p>source: https://www.youtube.com/watch?v=TcPYVqHAHNQ</p>
+      <div class="box">
+        <h3><span class="box-number">24.</span><br />CSS Creative Menu Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/menu/creative-menu-hover-effect/creative-menu-item-hover-effects.png" alt="menu hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> menu/navbar</p>
+          <a href="#" target="_blank">Menu hover effect</a>
+          <p>source: https://www.youtube.com/watch?v=TcPYVqHAHNQ</p>
+        </div>
       </div>
-      <div>
-        <p>CSS 3D Layered Social Media Icon Hover Effects</p>
-        <p>type: menu/navbar</p>
-        <a href="#" target="_blank">CSS 3D Layered Social MEdia</a>
-        <img src="./views/menu/3d-layered-social-media-icon/3d-layered-social-media-icon.png" alt="css 3d layered social media" />
-        <p>source: https://www.youtube.com/watch?v=AEb_NhCHo9E</p>
+      <div class="box">
+        <h3><span class="box-number">25.</span><br />CSS 3D Layered Social Media Icon Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/menu/3d-layered-social-media-icon/3d-layered-social-media-icon.png" alt="css 3d layered social media" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> menu/navbar</p>
+          <a href="#" target="_blank">CSS 3D Layered Social Media</a>
+          <p>source: https://www.youtube.com/watch?v=AEb_NhCHo9E</p>
+        </div>
       </div>
-      <div>
-        <p>Glowing Checkbox Design With Icon | HTML CSS and Fontawesome Icon</p>
-        <p>type: checkbox</p>
-        <a href="#" target="_blank">Glowing checkbox</a>
-        <img src="./views/checkbox/glowing-checkbox/glowing-checkbox.png" alt="glowing checkbox" />
-        <p>source: https://www.youtube.com/watch?v=kLfSg5eX6UE</p>
+      <div class="box">
+        <h3><span class="box-number">26.</span><br />Glowing Checkbox Design With Icon | HTML CSS and Fontawesome Icon</h3>
+        <div class="image-box">
+          <img src="./views/button/glowing-checkbox/glowing-checkbox.png" alt="glowing checkbox" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> checkbox</p>
+          <a href="#" target="_blank">Glowing checkbox</a>
+          <p>source: https://www.youtube.com/watch?v=kLfSg5eX6UE</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Testimonials Card UI Design Using CSS Grid | Cool CSS Hover Effects</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Responsive testimonial card</a>
-        <img src="./views/cards/testimonial-card-ui/testimonial-card-ui.png" alt="responsive testimonial card" />
-        <p>source: https://www.youtube.com/watch?v=pGEcBBjvRlU</p>
+      <div class="box">
+        <h3><span class="box-number">27.</span><br />Responsive Testimonials Card UI Design Using CSS Grid | Cool CSS Hover Effects</h3>
+        <div class="image-box">
+          <img src="./views/cards/testimonial-card-ui/testimonial-card-ui.png" alt="responsive testimonial card" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Responsive testimonial card</a>
+          <p>source: https://www.youtube.com/watch?v=pGEcBBjvRlU</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Neumorphism Loading Animation Effects | Neumorphic</p>
-        <p>type: loading</p>
-        <a href="#" target="_blank">Neumorphism loading animation</a>
-        <img src="./views/text/neumorphism-loading-animation/neumorphism-loading.png" alt="neumorphism loading animation" />
-        <p>source: https://www.youtube.com/watch?v=OqcgQnn3dBk</p>
+      <div class="box">
+        <h3><span class="box-number">28.</span><br />CSS Neumorphism Loading Animation Effects | Neumorphic</h3>
+        <div class="image-box">
+          <img src="./views/text/neumorphism-loading-animation/neumorphism-loading.png" alt="neumorphism loading animation" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> loading</p>
+          <a href="#" target="_blank">Neumorphism loading animation</a>
+          <p>source: https://www.youtube.com/watch?v=OqcgQnn3dBk</p>
+        </div>
       </div>
-      <div>
-        <p>Pure CSS Sticky Section Scrolling Effects</p>
-        <p>type: page</p>
-        <a href="#" target="_blank">Pure css sticky section</a>
-        <img src="./views/pages/sticky-section-scrolling/sticky-section-scrolling.png" alt="pure css sticky section" />
-        <p>https://www.youtube.com/watch?v=yk57cgZLWRo</p>
+      <div class="box">
+        <h3><span class="box-number">29.</span><br />Pure CSS Sticky Section Scrolling Effects</h3>
+        <div class="image-box">
+          <img src="./views/pages/sticky-section-scrolling/sticky-section-scrolling.png" alt="pure css sticky section" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> page</p>
+          <a href="#" target="_blank">Pure css sticky section</a>
+          <p>https://www.youtube.com/watch?v=yk57cgZLWRo</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Card Hover Effects | HTML CSS</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">card hover effect</a>
-        <img src="./views/cards/card-hover-effect/card-hover-effect.png" alt="card hover effect" />
-        <p>source: https://www.youtube.com/watch?v=vjIIhy9v4oU</p>
+      <div class="box">
+        <h3><span class="box-number">30.</span><br />CSS Card Hover Effects | HTML CSS</h3>
+        <div class="image-box">
+          <img src="./views/cards/card-hover-effect/card-hover-effect.png" alt="card hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">card hover effect</a>
+          <p>source: https://www.youtube.com/watch?v=vjIIhy9v4oU</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Neumorphism Card UI Hover Effects | CSS3 Responsive Design</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Neumorphism card</a>
-        <img src="./views/cards/neumorphism-card-ui/neumorphism-card-ui.png" alt="neumorphism card" />
-        <p>source: https://www.youtube.com/watch?v=d071ZRyZlyM</p>
+      <div class="box">
+        <h3><span class="box-number">31.</span><br />CSS Neumorphism Card UI Hover Effects | CSS3 Responsive Design</h3>
+        <div class="image-box">
+          <img src="./views/cards/neumorphism-card-ui/neumorphism-card-ui.png" alt="neumorphism card" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Neumorphism card</a>          
+          <p>source: https://www.youtube.com/watch?v=d071ZRyZlyM</p>
+        </div>
       </div>
-      <div>
-        <p>Responsive Box Model Web Design USing CSS Flexbox | HTML CSS</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Responsive box model</a>
-        <img src="./views/cards/responsive-box-model/responsive-box-model.png" alt="responsive box model" />
-        <p>source: https://www.youtube.com/watch?v=u5llIESEPqA</p>
+      <div class="box">
+        <h3><span class="box-number">32.</span><br />Responsive Box Model Web Design USing CSS Flexbox | HTML CSS</h3>
+        <div class="image-box">
+          <img src="./views/cards/responsive-box-model/responsive-box-model.png" alt="responsive box model" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Responsive box model</a>
+          <p>source: https://www.youtube.com/watch?v=u5llIESEPqA</p>
+        </div>
       </div>
-      <div>
-        <p>Pure CSS Circular Progress Bar | HTML CSS & SVG</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Circular Progress Bar</a>
-        <img src="./views/cards/circular-progress-bar/circular-progress-bar.png" alt="circular progress bar" />
-        <p>source: https://www.youtube.com/watch?v=Ft73g5Kyknw</p>
+      <div class="box">
+        <h3><span class="box-number">33.</span><br />Pure CSS Circular Progress Bar | HTML CSS & SVG</h3>
+        <div class="image-box">
+          <img src="./views/cards/circular-progress-bar/circular-progress-bar.png" alt="circular progress bar" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Circular Progress Bar</a>
+          <p>source: https://www.youtube.com/watch?v=Ft73g5Kyknw</p>
+        </div>
       </div>
-      <div>
-        <p>CSS Responsive Card Hover Effects | HTML & CSS</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Responsive card hover</a>
-        <img src="./views/cards/responsive-card-hover-effect/responsive-card-hover-effects.png" alt="responsive card hover" />
-        <p>source: https://www.youtube.com/watch?v=8b2mTq0Xrtw</p>
+      <div class="box">
+        <h3><span class="box-number">34.</span><br />CSS Responsive Card Hover Effects | HTML & CSS</h3>
+        <div class="image-box">
+          <img src="./views/cards/responsive-card-hover-effect/responsive-card-hover-effects.png" alt="responsive card hover" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Responsive card hover</a>
+          <p>source: https://www.youtube.com/watch?v=8b2mTq0Xrtw</p>
+        </div>
       </div>
-      <div>
-        <p>Our Services Box Hover Effects | HTML CSS Responsive Design</p>
-        <p>type: card</p>
-        <a href="#" target="_blank">Services box hover effect</a>
-        <img src="./views/cards/services-box-hover-effect/services-box-hover-effect.png" alt="services box hover effect" />
-        <p>source: https://www.youtube.com/watch?v=JJkuGvfFKOw</p>
+      <div class="box">
+        <h3><span class="box-number">35.</span><br />Our Services Box Hover Effects | HTML CSS Responsive Design</h3>
+        <div class="image-box">
+          <img src="./views/cards/services-box-hover-effect/services-box-hover-effect.png" alt="services box hover effect" />
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> card</p>
+          <a href="#" target="_blank">Services box hover effect</a>
+          <p>source: https://www.youtube.com/watch?v=JJkuGvfFKOw</p>
+        </div>
       </div>
-      <div>
-        <p>Notification Menu - 1</p>
-        <p>type: notification</p>
-        <a href="./views/notifications/notification-1/notification-1.html" target="_blank">Notification - 1</a>
-        <img src="views/notifications/notification-1/notification-1.png" alt="notification 1"/>
-        <p>source: https://100dayscss.com/?dayIndex=6</p>
+      <div class="box">
+        <h3><span class="box-number">36.</span><br />Notification Menu - 1</h3>
+        <div class="image-box">
+          <img src="views/notifications/notification-1/notification-1.png" alt="notification 1"/>
+        </div>
+        <div class="content-box">
+          <p><strong>Type:</strong> notification</p>
+          <a href="./views/notifications/notification-1/notification-1.html" target="_blank">Notification - 1</a>
+          <p>source: https://100dayscss.com/?dayIndex=6</p>
+        </div>
       </div>
     </div>
   </section>
