@@ -1,0 +1,682 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.frame {
+  background: #212529;
+}
+
+.multi {
+  display: flex;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  position: absolute;
+}
+
+.dot {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.ring:nth-child(1) {
+  width: 65px;
+  height: 65px;
+  -webkit-animation: spin 1s ease alternate infinite 0.0666666667s;
+          animation: spin 1s ease alternate infinite 0.0666666667s;
+}
+.ring:nth-child(1) .dot:nth-child(1) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(0deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(2) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(30deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(3) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(60deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(4) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(90deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(5) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(120deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(6) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(150deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(7) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(180deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(8) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(210deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(9) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(240deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(10) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(270deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(11) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(300deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+.ring:nth-child(1) .dot:nth-child(12) {
+  transform-origin: 2.5px 32.5px;
+  transform: rotate(330deg);
+  width: 5px;
+  height: 5px;
+  left: 30px;
+  opacity: 0.1666666667;
+}
+
+.ring:nth-child(2) {
+  width: 86px;
+  height: 86px;
+  -webkit-animation: spin 1s ease alternate infinite 0.1333333333s;
+          animation: spin 1s ease alternate infinite 0.1333333333s;
+}
+.ring:nth-child(2) .dot:nth-child(1) {
+  transform-origin: 3px 43px;
+  transform: rotate(0deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(2) {
+  transform-origin: 3px 43px;
+  transform: rotate(30deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(3) {
+  transform-origin: 3px 43px;
+  transform: rotate(60deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(4) {
+  transform-origin: 3px 43px;
+  transform: rotate(90deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(5) {
+  transform-origin: 3px 43px;
+  transform: rotate(120deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(6) {
+  transform-origin: 3px 43px;
+  transform: rotate(150deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(7) {
+  transform-origin: 3px 43px;
+  transform: rotate(180deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(8) {
+  transform-origin: 3px 43px;
+  transform: rotate(210deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(9) {
+  transform-origin: 3px 43px;
+  transform: rotate(240deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(10) {
+  transform-origin: 3px 43px;
+  transform: rotate(270deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(11) {
+  transform-origin: 3px 43px;
+  transform: rotate(300deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+.ring:nth-child(2) .dot:nth-child(12) {
+  transform-origin: 3px 43px;
+  transform: rotate(330deg);
+  width: 6px;
+  height: 6px;
+  left: 40px;
+  opacity: 0.3333333333;
+}
+
+.ring:nth-child(3) {
+  width: 107px;
+  height: 107px;
+  -webkit-animation: spin 1s ease alternate infinite 0.2s;
+          animation: spin 1s ease alternate infinite 0.2s;
+}
+.ring:nth-child(3) .dot:nth-child(1) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(0deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(2) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(30deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(3) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(60deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(4) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(90deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(5) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(120deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(6) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(150deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(7) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(180deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(8) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(210deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(9) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(240deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(10) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(270deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(11) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(300deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+.ring:nth-child(3) .dot:nth-child(12) {
+  transform-origin: 3.5px 53.5px;
+  transform: rotate(330deg);
+  width: 7px;
+  height: 7px;
+  left: 50px;
+  opacity: 0.5;
+}
+
+.ring:nth-child(4) {
+  width: 128px;
+  height: 128px;
+  -webkit-animation: spin 1s ease alternate infinite 0.2666666667s;
+          animation: spin 1s ease alternate infinite 0.2666666667s;
+}
+.ring:nth-child(4) .dot:nth-child(1) {
+  transform-origin: 4px 64px;
+  transform: rotate(0deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(2) {
+  transform-origin: 4px 64px;
+  transform: rotate(30deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(3) {
+  transform-origin: 4px 64px;
+  transform: rotate(60deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(4) {
+  transform-origin: 4px 64px;
+  transform: rotate(90deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(5) {
+  transform-origin: 4px 64px;
+  transform: rotate(120deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(6) {
+  transform-origin: 4px 64px;
+  transform: rotate(150deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(7) {
+  transform-origin: 4px 64px;
+  transform: rotate(180deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(8) {
+  transform-origin: 4px 64px;
+  transform: rotate(210deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(9) {
+  transform-origin: 4px 64px;
+  transform: rotate(240deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(10) {
+  transform-origin: 4px 64px;
+  transform: rotate(270deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(11) {
+  transform-origin: 4px 64px;
+  transform: rotate(300deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+.ring:nth-child(4) .dot:nth-child(12) {
+  transform-origin: 4px 64px;
+  transform: rotate(330deg);
+  width: 8px;
+  height: 8px;
+  left: 60px;
+  opacity: 0.6666666667;
+}
+
+.ring:nth-child(5) {
+  width: 149px;
+  height: 149px;
+  -webkit-animation: spin 1s ease alternate infinite 0.3333333333s;
+          animation: spin 1s ease alternate infinite 0.3333333333s;
+}
+.ring:nth-child(5) .dot:nth-child(1) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(0deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(2) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(30deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(3) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(60deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(4) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(90deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(5) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(120deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(6) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(150deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(7) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(180deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(8) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(210deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(9) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(240deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(10) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(270deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(11) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(300deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+.ring:nth-child(5) .dot:nth-child(12) {
+  transform-origin: 4.5px 74.5px;
+  transform: rotate(330deg);
+  width: 9px;
+  height: 9px;
+  left: 70px;
+  opacity: 0.8333333333;
+}
+
+.ring:nth-child(6) {
+  width: 170px;
+  height: 170px;
+  -webkit-animation: spin 1s ease alternate infinite 0.4s;
+          animation: spin 1s ease alternate infinite 0.4s;
+}
+.ring:nth-child(6) .dot:nth-child(1) {
+  transform-origin: 5px 85px;
+  transform: rotate(0deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(2) {
+  transform-origin: 5px 85px;
+  transform: rotate(30deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(3) {
+  transform-origin: 5px 85px;
+  transform: rotate(60deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(4) {
+  transform-origin: 5px 85px;
+  transform: rotate(90deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(5) {
+  transform-origin: 5px 85px;
+  transform: rotate(120deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(6) {
+  transform-origin: 5px 85px;
+  transform: rotate(150deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(7) {
+  transform-origin: 5px 85px;
+  transform: rotate(180deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(8) {
+  transform-origin: 5px 85px;
+  transform: rotate(210deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(9) {
+  transform-origin: 5px 85px;
+  transform: rotate(240deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(10) {
+  transform-origin: 5px 85px;
+  transform: rotate(270deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(11) {
+  transform-origin: 5px 85px;
+  transform: rotate(300deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+.ring:nth-child(6) .dot:nth-child(12) {
+  transform-origin: 5px 85px;
+  transform: rotate(330deg);
+  width: 10px;
+  height: 10px;
+  left: 80px;
+  opacity: 1;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

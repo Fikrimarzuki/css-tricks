@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,500,400,300);
+
+$background: #264057;
+$header: #5f98cd;
+$menu: #43627d;
+$text-main: #666666;
+$text-secondary: #93b2cd;
+$light-grey: #ebebeb;
+
+* {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #272c34;
+  border-radius: 8px;
+  background: $background;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// main content
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card {
+  transition: transform 0.5s;
+  position: relative;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+  header {
+    color: white;
+    background: $header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    border-radius: 3px 3px 0 0;
+
+    .menu-button-wrapper {
+      position: relative;
+      opacity: 0.5;
+      transition: opacity 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .line {
+        height: 4px;
+        width: 30px;
+        background: white;
+        border-radius: 2px;
+
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+      }
+
+      .dot {
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        border: 2px solid $header;
+        background: white;
+        top: -4px;
+        right: -4px;
+      }
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 60px;
+    }
+
+    .search-button-wrapper {
+      position: relative;
+
+      label:hover ~ .search-icon {
+        opacity: 1;
+      }
+
+      input[type="text"] {
+        position: absolute;
+        top: 50%;
+        left: -230px; // 252px after anim
+        transform: translateY(-50%);
+        padding: 10px;
+        border-radius: 40px;
+        border: none;
+        width: 215px;
+        opacity: 0;
+        transition: all 0.4s;
+        pointer-events: none;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      input[type="checkbox"]:checked ~ input[type="text"] {
+        left: -252px;
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .search-icon {
+        font-size: 1.3rem;
+        opacity: 0.5;
+        transition: opacity 0.4s;
+      }
+    }
+  }
+
+  .card-content-wrapper {
+    background: white;
+    color: $text-main;
+    padding-left: 30px;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 0 3px 3px;
+    overflow-y: hidden;
+
+    .card-content {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-left: 3px solid $light-grey;
+
+      .notification {
+        margin-top: 25px;
+        padding-left: 15px;
+        padding-right: 25px;
+        position: relative;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(80px);
+
+        &:hover {
+          color: $header;
+        }
+
+        &:first-of-type {
+          margin-top: 0;
+          animation: appear 1s ease 0.3s forwards;
+        }
+
+        &:nth-child(2) {
+          animation: appear 1s ease 0.5s forwards;
+        }
+
+        &:nth-child(3) {
+          animation: appear 1s ease 0.7s forwards;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 7px;
+          width: 7px;
+          border-radius: 50%;
+          background: white;
+          border: 2px solid $header;
+          top: 3px;
+          left: -7px;
+          box-shadow: 0 3px 0 #fff, 0 -3px 0 #fff;
+        }
+
+        p:first-of-type {
+          font-size: 0.7rem;
+        }
+        p:last-of-type {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .menu-content {
+    position: absolute;
+    background: $menu;
+    color: $text-secondary;
+    top: 50%;
+    left: 0;
+    transform: translate(20px, -50%);
+    padding: 10px 0;
+    border-radius: 3px 0 0 3px;
+    z-index: 1;
+    transition: transform 0.5s;
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      padding: 15px 25px 15px 15px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+        background: #385269;
+      }
+
+      span:first-of-type {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.move-card {
+  transform: translateX(150px);
+}
+
+.move-menu {
+  transform: translate(-100%, -50%) !important;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
