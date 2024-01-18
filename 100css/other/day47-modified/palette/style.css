@@ -1,0 +1,155 @@
+body {
+  background-color: #333;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 396px;
+  height: 396px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+}
+
+.pixel {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.red {
+  background-color: #F44336;
+  border-color: #F44336;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.orange {
+  background-color: #FF9800;
+  border-color: #FF9800;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.yellow {
+  background-color: #FFEB3B;
+  border-color: #FFEB3B;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.green {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.blue {
+  background-color: #2196F3;
+  border-color: #2196F3;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.purple {
+  background-color: #9C27B0;
+  border-color: #9C27B0;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.background {
+  background-color: #333;
+  border-color: #333;
+}
+
+.selected {
+  border: 1px solid #000;
+  filter: brightness(120%);
+  -webkit-animation: spin 0.5s ease-in-out;
+          animation: spin 0.5s ease-in-out;
+}
+
+.continuous {
+  background: linear-gradient(to bottom, #a5213d 1%, #2989d8 50%, #7db9e8 100%);
+  border: none;
+  width: 22px;
+  height: 22px;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  66% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  66% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

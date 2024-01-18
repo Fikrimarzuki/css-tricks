@@ -46,7 +46,7 @@
   left: 46%;
   text-align: left;
   height: 45px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .carousel .change_outer .change_inner {
   position: relative;
